@@ -2,8 +2,8 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1><%= @course.title %></h1>
-  <% @course.image.url.present? do %>
-  <%= image_tag @course.image, class: 'img-fluid' %>
+  <%= @course.image.url.present? do %>
+  <%= image_ tag @course.image %>
   <% end %>
   <br />
   <div class="row">
@@ -21,6 +21,7 @@
 
     <div class="col-sm-8 col-12">
       <%= @course.description %>
+      <%= image_tag @course.image %>
     </div>
   </div>
 
