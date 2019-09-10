@@ -13,7 +13,7 @@
       <li>
         <%= section.title %>
         <% current_course.image.url.present? do %>
-        <%= image_tag current_course.image, class: 'img-fluid' %>
+          <%= image_tag current_course.image.url %>
         <% end %>
         <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
         <ul>
