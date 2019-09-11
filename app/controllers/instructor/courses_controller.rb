@@ -15,9 +15,6 @@ class Instructor::CoursesController < ApplicationController
     end
   end
 
-  def show
-  end
-
   private
 
   def require_authorized_for_current_course
